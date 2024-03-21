@@ -1,0 +1,15 @@
+this is text file
+we are going to read the data
+we are going to write a programm to read this file
+this is text file
+we are going to read the data
+we are going to write a programm to read this file
+this is text file
+we are going to read the data
+we are going to write a programm to read this file
+this is text file
+we are going to read the data
+we are going to write a programm to read this file
+this is text file
+we are going to read the data
+we are going to write a programm to read this file
