@@ -2,6 +2,7 @@ package org.wipro.automation.uo.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.wipro.automation.uo.utilitiespkg.ReusableClass;
 
 public class SignUpPage 
@@ -26,6 +27,35 @@ public class SignUpPage
 	{
 		driver.findElement(By.name(ReusableClass.readElementprop("fb_signup_lastname_name"))).sendKeys(lname);
 	}
+	
+	public void enter_Mobilenumber(String mnum) throws Exception
+	{
+		driver.findElement(By.name(ReusableClass.readElementprop("fb_signup_Mob_Num_name"))).sendKeys(mnum);
+	}
+	
+	public void enter_Newpass(String npass) throws Exception
+	{
+		driver.findElement(By.name(ReusableClass.readElementprop("fb_signup_New_pass_name"))).sendKeys(npass);
+	}
+	
+	public void enter_Birth_month(String month) throws Exception
+	{
+		Select mon = new Select(driver.findElement(By.name(ReusableClass.readElementprop("fb_signup_birth_month_name"))));
+		mon.selectByVisibleText(month);
+	}
+	
+	public void enter_Birth_day(String day) throws Exception
+	{
+		Select days = new Select(driver.findElement(By.name(ReusableClass.readElementprop("fb_signup_birth_day_name"))));
+		days.selectByVisibleText(day);
+	}
+	
+	public void enter_Birth_year(String year) throws Exception
+	{
+		Select years = new Select(driver.findElement(By.name(ReusableClass.readElementprop("fb_signup_birth_year_name"))));
+		years.selectByVisibleText(year);
+	}
+	
 	
 	public void click_SignUp_bttn() throws Exception
 	{
